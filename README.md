@@ -41,6 +41,17 @@ validate.js is a lightweight JavaScript form validation library inspired by Code
         }
     });
 
+## Inline validation how to
+
+    input = document.getElementById('name');
+      
+    input.addEventListener('blur', function () {
+        var errors = document.getElementById("errors");
+
+        validator.validateField(this);
+        errors.innerHTML = validator.errors[0] || "";
+    });
+
 ## Documentation
 
 You can view everything at http://rickharrison.github.com/validate.js
