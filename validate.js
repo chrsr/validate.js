@@ -131,7 +131,7 @@
 
     /*
      * @public
-     * Run validation against one field at a time
+     * Inline validation
      */
 
     FormValidator.prototype.validateField = function(element) {
